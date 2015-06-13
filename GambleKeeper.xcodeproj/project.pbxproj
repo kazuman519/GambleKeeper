@@ -77,6 +77,8 @@
 		A43CB0211B2C5A660051E31E /* GambleKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				A43CB0441B2C5B6F0051E31E /* Model */,
+				A43CB0451B2C5B6F0051E31E /* ViewController */,
 				A43CB0241B2C5A660051E31E /* AppDelegate.swift */,
 				A43CB0261B2C5A660051E31E /* ViewController.swift */,
 				A43CB0281B2C5A660051E31E /* Main.storyboard */,
@@ -110,6 +112,20 @@
 				A43CB0391B2C5A660051E31E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A43CB0441B2C5B6F0051E31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A43CB0451B2C5B6F0051E31E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

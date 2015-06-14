@@ -109,13 +109,5 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
         money = Int(runningDistanceM) / 30
         return money
     }
-    
-    func conversionToMoney() {
-        
-    }
-    
-    private func conversionToMoney(hoge : String) -> Int {
-        return hoge.toInt()!
-    }
 }
 

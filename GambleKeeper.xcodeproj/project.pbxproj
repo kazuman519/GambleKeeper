@@ -13,6 +13,7 @@
 		A43CB02C1B2C5A660051E31E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43CB02B1B2C5A660051E31E /* Images.xcassets */; };
 		A43CB02F1B2C5A660051E31E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43CB02D1B2C5A660051E31E /* LaunchScreen.xib */; };
 		A43CB03B1B2C5A660051E31E /* GambleKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CB03A1B2C5A660051E31E /* GambleKeeperTests.swift */; };
+		A43CB0481B2DA2590051E31E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43CB0471B2DA2590051E31E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A43CB0341B2C5A660051E31E /* GambleKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GambleKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43CB0391B2C5A660051E31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A43CB03A1B2C5A660051E31E /* GambleKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleKeeperTests.swift; sourceTree = "<group>"; };
+		A43CB0471B2DA2590051E31E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43CB0481B2DA2590051E31E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		A43CB0161B2C5A660051E31E = {
 			isa = PBXGroup;
 			children = (
+				A43CB0471B2DA2590051E31E /* MapKit.framework */,
 				A43CB0211B2C5A660051E31E /* GambleKeeper */,
 				A43CB0371B2C5A660051E31E /* GambleKeeperTests */,
 				A43CB0201B2C5A660051E31E /* Products */,

@@ -79,8 +79,6 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         
         switch status{
-        case .Restricted, .Denied:
-//            manager.stopUpdatingLocation()
         case .AuthorizedWhenInUse, .AuthorizedAlways:
             locationManager.startUpdatingLocation()
         default:

@@ -22,14 +22,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bm-rj-S1L">
+                                <rect key="frame" x="174" y="170" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-hg-HGu">
+                                <rect key="frame" x="238" y="170" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK5-P2-thC">
+                                <rect key="frame" x="255" y="419" width="90" height="30"/>
+                                <state key="normal" title="チェックイン">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkinAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="86F-ZO-1eg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jK5-P2-thC" secondAttribute="centerX" id="67k-U1-yGu"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jK5-P2-thC" secondAttribute="bottom" constant="151" id="7tQ-lZ-gWx"/>
                             <constraint firstItem="Fs4-bu-1hg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="89e-tX-Vpg"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Fs4-bu-1hg" secondAttribute="bottom" constant="537" id="Fwf-9q-Kgg"/>
                             <constraint firstAttribute="centerX" secondItem="Fs4-bu-1hg" secondAttribute="centerX" id="wG0-5C-ptm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="fOt-hg-HGu" id="FYE-Jr-tzZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

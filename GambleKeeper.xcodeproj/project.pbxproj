@@ -77,6 +77,7 @@
 		A43CB0211B2C5A660051E31E /* GambleKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				A43CB0461B2C77EE0051E31E /* Entity */,
 				A43CB0441B2C5B6F0051E31E /* Model */,
 				A43CB0451B2C5B6F0051E31E /* ViewController */,
 				A43CB0241B2C5A660051E31E /* AppDelegate.swift */,
@@ -126,6 +127,13 @@
 			children = (
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A43CB0461B2C77EE0051E31E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

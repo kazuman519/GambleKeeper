@@ -12,6 +12,7 @@ import CoreLocation
 class ViewController: UIViewController ,CLLocationManagerDelegate{
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
     
     var player = Player()
     
@@ -96,6 +97,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
                 runningDistance += (distance! + 10)
             }
 
+            distanceLabel.text = runningDistance.description
             NSLog("移動距離\(runningDistance)")
             
             currentLocation = locations.last as? CLLocation

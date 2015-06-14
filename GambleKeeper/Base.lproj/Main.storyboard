@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -43,6 +44,15 @@
                                     <action selector="checkinAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="86F-ZO-1eg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOb-Fy-mYi">
+                                <rect key="frame" x="487" y="497" width="51" height="30"/>
+                                <state key="normal" title="GoMap">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NSz-r5-OUj" kind="modal" id="C4d-Yc-olp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,6 +60,8 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jK5-P2-thC" secondAttribute="bottom" constant="151" id="7tQ-lZ-gWx"/>
                             <constraint firstItem="Fs4-bu-1hg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="89e-tX-Vpg"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Fs4-bu-1hg" secondAttribute="bottom" constant="537" id="Fwf-9q-Kgg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NOb-Fy-mYi" secondAttribute="trailing" constant="46" id="KEe-fC-hC0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NOb-Fy-mYi" secondAttribute="bottom" constant="73" id="SjK-QD-hzQ"/>
                             <constraint firstAttribute="centerX" secondItem="Fs4-bu-1hg" secondAttribute="centerX" id="wG0-5C-ptm"/>
                         </constraints>
                     </view>
@@ -59,6 +71,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="L7N-AM-BE7">
+            <objects>
+                <viewController id="NSz-r5-OUj" customClass="MapViewController" customModule="GambleKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KQB-Tv-ThB"/>
+                        <viewControllerLayoutGuide type="bottom" id="6hf-UC-uJt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OSe-As-fcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J3-Uq-QC2">
+                                <rect key="frame" x="549" y="562" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="BTp-zV-Jio"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-BQ-Hre">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="549"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NNg-BQ-Hre" secondAttribute="trailing" constant="-16" id="4ak-gG-yeo"/>
+                            <constraint firstItem="NNg-BQ-Hre" firstAttribute="leading" secondItem="OSe-As-fcQ" secondAttribute="leadingMargin" constant="-16" id="6wq-oz-jj2"/>
+                            <constraint firstItem="NNg-BQ-Hre" firstAttribute="top" secondItem="OSe-As-fcQ" secondAttribute="topMargin" id="7Ig-Ax-VQl"/>
+                            <constraint firstItem="6hf-UC-uJt" firstAttribute="top" secondItem="2J3-Uq-QC2" secondAttribute="bottom" constant="8" id="BVP-9d-oZs"/>
+                            <constraint firstItem="2J3-Uq-QC2" firstAttribute="trailing" secondItem="OSe-As-fcQ" secondAttribute="trailingMargin" id="CXH-Md-Edk"/>
+                            <constraint firstItem="2J3-Uq-QC2" firstAttribute="top" secondItem="NNg-BQ-Hre" secondAttribute="bottom" constant="13" id="sXa-bJ-0iu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="P0U-Nl-b8g"/>
+                    <connections>
+                        <outlet property="mapView" destination="NNg-BQ-Hre" id="U01-kl-urI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r04-UT-Rin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="957"/>
         </scene>
     </scenes>
 </document>

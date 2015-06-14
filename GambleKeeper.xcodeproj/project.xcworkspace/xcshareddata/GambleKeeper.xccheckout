@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4CB93517-F464-4F3E-805F-3914FBB169B8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1AA7D9784DA145B7DBECD7D58C72B3BA88C67A83</key>
+		<string>github.com:kazuman519/GambleKeeper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GambleKeeper.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1AA7D9784DA145B7DBECD7D58C72B3BA88C67A83</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kazuman519/GambleKeeper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AA7D9784DA145B7DBECD7D58C72B3BA88C67A83</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AA7D9784DA145B7DBECD7D58C72B3BA88C67A83</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GambleKeeper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
